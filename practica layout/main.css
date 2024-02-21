@@ -1,0 +1,12 @@
+
+
+nav {
+    background: green;
+    color: red;
+}
+li {
+    background: white;
+}
+a:hover {
+    color: blue;
+}
