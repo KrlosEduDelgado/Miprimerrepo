@@ -38,4 +38,3 @@ if (pregunta === "si") {
 } else {
     console.log("No te creo")
 }
-
