@@ -153,7 +153,7 @@ Beca Jesua: 50% de descuento.
 Finalmente, además del precio mensual con descuento, indicar al usuario cuánto gastaría en total por el curso elegido, tomando en cuenta las siguientes duraciones:
 Course: 2 meses
 Carrera 6 meses
-Master: 12 meses */ 
+Master: 12 meses 
 
 const curso = Number(
     prompt (
@@ -213,9 +213,47 @@ console.log("el costo mensual del programa es: " + costoMensualConDescuento);
 console.log(
     "el costo total del programa seleccionado es: " + costoTotal
 );
+*/ 
 
+/* 11. Realizar un programa que ayude a calcular el total a pagar de acuerdo a la distancia recorrida por un vehículo con cargo extra por los litros consumidos, tomando en consideración lo siguiente:
+Si el vehículo es “coche”, el precio kilometro ha de ser 0.20, si es “moto” ha de ser 0.10 y si es “autobús” 0.5.
+Si los litros consumidos están entre 0 y 100 se ha de añadir 5 al costo total, si es mayor la cantidad de litros consumidos se ha de añadir 10 al total. Considere qué:
+total a pagar = (precio kilometro x kms recorridos) + extra por litros consumidos.   */
 
-
+// Definir los precios por kilómetro según el tipo de vehículo
+const preciosPorKilometro = {
+    "coche": 0.20,
+    "moto": 0.10,
+    "autobús": 0.5
+  };
+  
+  // Solicitar al usuario los datos
+  let tipoVehiculo = prompt("Ingrese el tipo de vehículo (coche, moto, autobús): ").toLowerCase();
+  let kmsRecorridos = parseFloat(prompt("Ingrese la distancia recorrida en kilómetros: "));
+  let litrosConsumidos = parseFloat(prompt("Ingrese la cantidad de litros consumidos: "));
+  
+  // Verificar si el tipo de vehículo ingresado es válido
+  if (!(tipoVehiculo in preciosPorKilometro)) {
+    console.log("El tipo de vehículo ingresado no es válido.");
+  } else {
+    // Calcular el costo del viaje
+    let precioPorKilometro = preciosPorKilometro[tipoVehiculo];
+    let totalAPagar = precioPorKilometro * kmsRecorridos;
+  
+    // Calcular el cargo extra por litros consumidos
+    let cargoExtra = 0;
+    if (litrosConsumidos > 0 && litrosConsumidos <= 100) {
+      cargoExtra = 5;
+    } else if (litrosConsumidos > 100) {
+      cargoExtra = 10;
+    }
+  
+    // Sumar el cargo extra al total a pagar
+    totalAPagar += cargoExtra;
+  
+    // Mostrar el total a pagar al usuario
+    alert(`El total a pagar es: $${totalAPagar.toFixed(2)}`);
+  }
 
 
 
