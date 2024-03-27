@@ -6,6 +6,7 @@ const botondeposito = document.querySelector("#depositos");
 const botonretiros = document.querySelector("#retiros");
 const modal = document.querySelector("#modal");
 const botonSaldos = document.querySelector("#saldo")
+const botonSalir = document.querySelector("#salir")
 const cerrarModalSaldos = document.querySelector("#modal button")
 const fondoDeModal = document.querySelector("#backdrop")
 console.log(fondoDeModal, 'boton de cerrar')
@@ -38,6 +39,11 @@ botonretiros.addEventListener("click", function () {
     window.location.href = "./pantalla2.html";
 })
 
+//este es el boton para salir y regresar a la página anterior
+botonSalir.addEventListener("click", function () {
+    window.location.href = "./index.html";
+})
+
 function conmutarClase(elementohtml, clase){
     elementohtml.classList.toggle(clase)
 }
@@ -68,3 +74,4 @@ fondoDeModal.addEventListener('click', function(){
     conmutarClase(modal, 'close_modal')
     fondoDeModal.style = "display: none"
 })
+
