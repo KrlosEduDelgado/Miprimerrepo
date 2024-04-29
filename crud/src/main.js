@@ -1,3 +1,3 @@
-import {jedis}from"./db"
+import { jedis } from"./db.js"
 
 console.log(jedis)

@@ -4,10 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crud - Javascript</title>
+    <!--primero van los archivos externos y luego van los locales-->
+    <script src="https://cdn.tailwindcss.com"></script>
+
     <link rel="stylesheet" href="./styles/app.css">
     <script type="module" src="./src/main.js"></script>
 </head>
-<body>
-    
+<body class="bg-slate-700 relative">
+    <section class="container mx-auto p-12 relative">
+        <div class="text-center">
+            <div class="inline-flex items-center justify-center gap-4 px-2.5 py-2 bg-[#fedd49] rounded-lg bg-[#fedd49]">
+                <img src="./icons/logo.svg" alt="Logo">
+                <h1 class="text-4xl font-bold ">Stars wars</h1>
+            </div>
+        </div>
+        <!-- Tabla -->
+      <div class="overflow-hidden rounded-lg border border-gray-200 shadow-md m-5">
+        <table class="w-[1024px] lg:w-full border-collapse bg-white text-left text-sm text-gray-500">
+          <thead class="bg-gray-50">
+            <tr>
+              <th scope="col" class="px-6 py-4 font-medium text-gray-900">Name</th>
+              <th scope="col" class="px-6 py-4 font-medium text-gray-900">State</th>
+              <th scope="col" class="px-6 py-4 font-medium text-gray-900">Role</th>
+              <th scope="col" class="px-6 py-4 font-medium text-gray-900">Team</th>
+              <th scope="col" class="px-6 py-4 font-medium text-gray-900"></th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100 border-t border-gray-100">
+            
+          </tbody>
+        </table>
+      </div>
+      <!-- Tabla --> 
+    </section>   
 </body>
 </html>
