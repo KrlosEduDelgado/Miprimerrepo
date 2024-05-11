@@ -1,4 +1,3 @@
-import { thC } from "./components/thC.js";
 import { jedis, titles } from"./db.js"
 
 console.log(jedis)
