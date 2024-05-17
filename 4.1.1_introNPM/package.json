@@ -1,0 +1,14 @@
+{
+  "name": "4.1.1_intronpm",
+  "version": "1.0.0",
+  "description": "Este es un proyecto para probar funciones básicas de NPM",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "El borrego",
+  "license": "ISC",
+  "dependencies": {
+    "number-to-text": "^0.3.9"
+  }
+}
