@@ -37,7 +37,7 @@ function mostrarPokemon(poke) {
                 ${tipos}
             </div>
             <div class="pokemon-stats">
-                <p class="stat">${poke.height}m</p>
+                <p class="stat">${poke.height/10}m</p>
                 <p class="stat">${poke.weight}kg</p>
             </div>
         </div>
@@ -68,6 +68,13 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     }
 }))
 
+const findPokemon = (name) => {
+    return pokemones.find((pokemon) => pokemon.name.toLocaleLowerCase().trim() == name.toLocaleLowerCase().trim());
+}
+
+
+
+/*
 const searchInput = document.getElementById("search");
 const pokedexContainer = document.getElementById("pokedex");
 
@@ -108,4 +115,4 @@ async function searchPokemon () {
     }
 }
 
-document.getElementById("btn-search").addEventListener("click", searchPokemon)
+document.getElementById("btn-search").addEventListener("click", searchPokemon) */
