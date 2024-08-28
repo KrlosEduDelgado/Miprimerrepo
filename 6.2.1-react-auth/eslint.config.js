@@ -34,6 +34,10 @@ export default [
         { allowConstantExport: true },
       ],
     },
-    
+    extends: [
+      'standard',
+      'standard-jsx',
+      'plugin:cypress/recommended'
+    ],
   },
 ]
