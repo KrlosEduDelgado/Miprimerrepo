@@ -1,0 +1,15 @@
+{
+  "name": "7.2.2-intro-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Carlos Delgado",
+  "license": "ISC",
+  "description": "proyecto de practica de express",
+  "dependencies": {
+    "express": "^4.21.0"
+  }
+}
