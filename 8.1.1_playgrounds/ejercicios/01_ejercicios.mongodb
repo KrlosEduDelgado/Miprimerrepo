@@ -1,0 +1,15 @@
+use('restaurants_samples')
+
+db.restaurants.findOne({ name: "Morris Park Bake Shop" })
+
+// encontrar un restaurante por su id
+db.restaurants.findOne({ _id: ObjectId('671867ef5105fd45fec407f9') })
+
+// encontrar todos los restaurantes
+db.restaurants.find()
+
+// encontrar los primeros 3 restaurantes
+db.restaurants.find().limit(3)
+
+// contar cuantos restaurantes hay
+db.restaurants.find().count()
