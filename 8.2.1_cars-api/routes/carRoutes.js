@@ -6,7 +6,7 @@ const carRoutes = express.Router()
 
 carRoutes.post('/cars', carController.createCar)
 carRoutes.get('/cars', carController.getAllCars)
-carRoutes.get('/cars/:carId', carController.getCarById)
+carRoutes.get('/cars/:carId', carController.getCarById) // super importante poner los dos puntos despues de la barra 
 carRoutes.patch('/cars/:carId', carController.updateCarById)
 carRoutes.delete('/cars/:carId', carController.deleteCarById)
 
